@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Alminhas no Distrito de Viseu</title>
+    <meta charset="utf-8">
+    <meta name="description" content="Alminhas - Mapa interactivo">
+    <meta name="keywords" content="Alminhas, Distrito de Viseu, WebSig, Mapa Interactivo">
+    <meta name="author" content="Ezequiel Correia, Projecto Alminhas">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <link rel="stylesheet" href="css/leaflet.css">
+    <script src="js/leaflet.js"></script>
+    <script src="data/viseu.geojson"></script>
+    <style>
+        body {
+            padding: 0;
+            margin: 0;
+        }
+        html, body {
+            height: 90%;
+            width: 90%;
+        }
+        #map{
+            height: 100%;
+            width: 50%;
+            z-index: 1;
+        }
+    </style>
+</head>
+<body>
+    <div id="map"></div>
+    <script src="js/layers.js"></script>
+</body>
+</html>
