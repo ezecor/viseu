@@ -52,6 +52,16 @@ function conc_style(feature) {
         };
     }
 }
+var leg_Alminhas = L.control({position: "bottomright"});
+leg_Alminhas.onAdd = function(map) {
+    var div = L.DomUtil.create("div", "legenda");
+    div.innerHTML =
+    'Inventário<br>' +
+    '<div style="background-color: #006300; opacity: 0.5"></div> Sim<br>' +
+    '<div style="background-color: #006300; opacity: 0.2"></div> Não<br>';
+    return div;
+    };
+leg_Alminhas.addTo(map);
 var scale = L.control.scale();
 scale.addTo(map);
 map.attributionControl.setPrefix(
